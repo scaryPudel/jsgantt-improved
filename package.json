@@ -16,7 +16,8 @@
     "dist": "npm run build && npm run browserify && cp src/jsgantt.css dist/ && echo 'DIST finished'",
     "publishnpm": "npm run dist && npm publish",
     "demo-full": "npm run dist && npm run start",
-    "e2e-prepare": "npm i -g webdriver-manager && webdriver-manager update && ./node_modules/protractor/node_modules/webdriver-manager/bin/webdriver-manager update"
+    "e2e-prepare": "npm i -g webdriver-manager && webdriver-manager update && ./node_modules/protractor/node_modules/webdriver-manager/bin/webdriver-manager update",
+    "custom-link": "npm run build:lib && cd dist/jsgantt-improved && npm link",
   },
   "repository": {
     "type": "git",
